@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import CryptoKit
 
 class LoginViewController: UIViewController {
 
+    let passKey = "Hello"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    func getHash
 
 }
 

@@ -11,4 +11,6 @@ protocol Identification {
     var name: String { get }
     var password: String { get }
     var isValid: Bool { get }
+    
+    func getHashFromUser(password: String)
 }
