@@ -9,7 +9,6 @@ import Foundation
 
 protocol PlayerProtocol {
     var name: String { get }
-    var password: String { get }
     var exp: Int { get set }
     var money: Int { get set }
 }
@@ -21,12 +20,10 @@ protocol PlayerStatsProtocol {
     var stamina: Int { get set }
 }
 
-protocol PlayerInventory {
+protocol PlayerInventoryProtocol {
     var items: [ItemProtocol] { get set }
 }
 
-protocol Playerlocation {
+protocol PlayerlocationProtocol {
     var location: MapProtocol { get set }
 }
-
-protocol 

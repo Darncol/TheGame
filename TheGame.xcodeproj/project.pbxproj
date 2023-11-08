@@ -74,6 +74,7 @@
 				88DC44AF2AFBB03D009356E9 /* ConfigFiles */,
 				88DC44A02AFBAAB5009356E9 /* Main.storyboard */,
 				88DC44A32AFBAAB6009356E9 /* Assets.xcassets */,
+				88DC44A82AFBAAB6009356E9 /* Info.plist */,
 			);
 			path = TheGame;
 			sourceTree = "<group>";
@@ -81,7 +82,6 @@
 		88DC44AF2AFBB03D009356E9 /* ConfigFiles */ = {
 			isa = PBXGroup;
 			children = (
-				88DC44A82AFBAAB6009356E9 /* Info.plist */,
 				88DC44A52AFBAAB6009356E9 /* LaunchScreen.storyboard */,
 				88DC449C2AFBAAB5009356E9 /* SceneDelegate.swift */,
 				88DC449A2AFBAAB5009356E9 /* AppDelegate.swift */,
