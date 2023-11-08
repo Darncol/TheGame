@@ -15,12 +15,12 @@
 		88DC44A22AFBAAB5009356E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DC44A02AFBAAB5009356E9 /* Main.storyboard */; };
 		88DC44A42AFBAAB6009356E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DC44A32AFBAAB6009356E9 /* Assets.xcassets */; };
 		88DC44A72AFBAAB6009356E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DC44A52AFBAAB6009356E9 /* LaunchScreen.storyboard */; };
-		88DC44B42AFBB14C009356E9 /* Idenitfication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B32AFBB14C009356E9 /* Idenitfication.swift */; };
-		88DC44B62AFBB201009356E9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B52AFBB201009356E9 /* Player.swift */; };
-		88DC44B82AFBB541009356E9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B72AFBB541009356E9 /* Item.swift */; };
+		88DC44B42AFBB14C009356E9 /* IdenitficationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B32AFBB14C009356E9 /* IdenitficationProtocol.swift */; };
+		88DC44B62AFBB201009356E9 /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */; };
+		88DC44B82AFBB541009356E9 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B72AFBB541009356E9 /* ItemProtocol.swift */; };
 		88DC44BB2AFBB6CB009356E9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BA2AFBB6CB009356E9 /* Realm */; };
 		88DC44BD2AFBB6CB009356E9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BC2AFBB6CB009356E9 /* RealmSwift */; };
-		88DC44BF2AFBBF0A009356E9 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44BE2AFBBF0A009356E9 /* Map.swift */; };
+		88DC44BF2AFBBF0A009356E9 /* MapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44BE2AFBBF0A009356E9 /* MapProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		88DC44A32AFBAAB6009356E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DC44A62AFBAAB6009356E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88DC44A82AFBAAB6009356E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88DC44B32AFBB14C009356E9 /* Idenitfication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idenitfication.swift; sourceTree = "<group>"; };
-		88DC44B52AFBB201009356E9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		88DC44B72AFBB541009356E9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		88DC44BE2AFBBF0A009356E9 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		88DC44B32AFBB14C009356E9 /* IdenitficationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdenitficationProtocol.swift; sourceTree = "<group>"; };
+		88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
+		88DC44B72AFBB541009356E9 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
+		88DC44BE2AFBBF0A009356E9 /* MapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +113,10 @@
 		88DC44B22AFBB0D2009356E9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				88DC44B32AFBB14C009356E9 /* Idenitfication.swift */,
-				88DC44B52AFBB201009356E9 /* Player.swift */,
-				88DC44B72AFBB541009356E9 /* Item.swift */,
-				88DC44BE2AFBBF0A009356E9 /* Map.swift */,
+				88DC44B32AFBB14C009356E9 /* IdenitficationProtocol.swift */,
+				88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */,
+				88DC44B72AFBB541009356E9 /* ItemProtocol.swift */,
+				88DC44BE2AFBBF0A009356E9 /* MapProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -200,12 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DC449F2AFBAAB5009356E9 /* LoginViewController.swift in Sources */,
-				88DC44B42AFBB14C009356E9 /* Idenitfication.swift in Sources */,
+				88DC44B42AFBB14C009356E9 /* IdenitficationProtocol.swift in Sources */,
 				88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */,
-				88DC44BF2AFBBF0A009356E9 /* Map.swift in Sources */,
-				88DC44B62AFBB201009356E9 /* Player.swift in Sources */,
+				88DC44BF2AFBBF0A009356E9 /* MapProtocol.swift in Sources */,
+				88DC44B62AFBB201009356E9 /* PlayerProtocol.swift in Sources */,
 				8841240E2AFBDAAE007688D6 /* Storage.swift in Sources */,
-				88DC44B82AFBB541009356E9 /* Item.swift in Sources */,
+				88DC44B82AFBB541009356E9 /* ItemProtocol.swift in Sources */,
 				884124102AFBDBB8007688D6 /* Player.swift in Sources */,
 				88DC449D2AFBAAB5009356E9 /* SceneDelegate.swift in Sources */,
 			);

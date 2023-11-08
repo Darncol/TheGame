@@ -107,66 +107,16 @@
             </objects>
             <point key="canvasLocation" x="-53" y="32"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="N4H-U4-gAH">
-            <objects>
-                <viewController id="PCX-jn-lbP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5mI-5o-S5T">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4v8-yX-gj7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="YwP-W1-G51"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l0u-g9-SWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2275" y="344"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="VpU-bO-0Sz">
-            <objects>
-                <viewController id="OPW-c7-Aij" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="o7N-Ye-1RH">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="mn0-DT-vd1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="QLe-e0-KkO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1zF-Pz-YPW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2275" y="-263"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="gu6-86-04s">
-            <objects>
-                <tabBarController id="25I-vs-YXv" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uOC-TZ-sjj">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="OPW-c7-Aij" kind="relationship" relationship="viewControllers" id="6jy-48-xTT"/>
-                        <segue destination="PCX-jn-lbP" kind="relationship" relationship="viewControllers" id="Jdz-Sa-DD6"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fgQ-Ci-Ud7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1398" y="41"/>
-        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
