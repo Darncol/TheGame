@@ -18,6 +18,7 @@
 		88DC44B82AFBB541009356E9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B72AFBB541009356E9 /* Item.swift */; };
 		88DC44BB2AFBB6CB009356E9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BA2AFBB6CB009356E9 /* Realm */; };
 		88DC44BD2AFBB6CB009356E9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BC2AFBB6CB009356E9 /* RealmSwift */; };
+		88DC44BF2AFBBF0A009356E9 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44BE2AFBBF0A009356E9 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		88DC44B32AFBB14C009356E9 /* Idenitfication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idenitfication.swift; sourceTree = "<group>"; };
 		88DC44B52AFBB201009356E9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		88DC44B72AFBB541009356E9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		88DC44BE2AFBBF0A009356E9 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				88DC44B32AFBB14C009356E9 /* Idenitfication.swift */,
 				88DC44B52AFBB201009356E9 /* Player.swift */,
 				88DC44B72AFBB541009356E9 /* Item.swift */,
+				88DC44BE2AFBBF0A009356E9 /* Map.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				88DC449F2AFBAAB5009356E9 /* LoginViewController.swift in Sources */,
 				88DC44B42AFBB14C009356E9 /* Idenitfication.swift in Sources */,
 				88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */,
+				88DC44BF2AFBBF0A009356E9 /* Map.swift in Sources */,
 				88DC44B62AFBB201009356E9 /* Player.swift in Sources */,
 				88DC44B82AFBB541009356E9 /* Item.swift in Sources */,
 				88DC449D2AFBAAB5009356E9 /* SceneDelegate.swift in Sources */,

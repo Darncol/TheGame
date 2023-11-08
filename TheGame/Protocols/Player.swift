@@ -24,3 +24,7 @@ protocol PlayerStatsProtocol {
 protocol PlayerInventory {
     var items: [ItemProtocol] { get set }
 }
+
+protocol Playerlocation {
+    var location: MapProtocol { get set }
+}

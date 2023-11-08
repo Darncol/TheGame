@@ -9,4 +9,13 @@ import Foundation
 
 protocol ItemProtocol {
     var name: String { get }
+    var durability: Int { get set }
+}
+
+protocol WeaponProtocol {
+    var damage: Int { get }
+}
+
+protocol ArmorProtocol {
+    var defence: Int { get }
 }
