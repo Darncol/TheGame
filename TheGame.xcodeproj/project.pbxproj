@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8841240E2AFBDAAE007688D6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841240D2AFBDAAE007688D6 /* Storage.swift */; };
+		884124102AFBDBB8007688D6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841240F2AFBDBB8007688D6 /* Player.swift */; };
 		88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC449A2AFBAAB5009356E9 /* AppDelegate.swift */; };
 		88DC449D2AFBAAB5009356E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC449C2AFBAAB5009356E9 /* SceneDelegate.swift */; };
 		88DC449F2AFBAAB5009356E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC449E2AFBAAB5009356E9 /* LoginViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8841240D2AFBDAAE007688D6 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		8841240F2AFBDBB8007688D6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		88DC44972AFBAAB5009356E9 /* TheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DC449A2AFBAAB5009356E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DC449C2AFBAAB5009356E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		88DC44B02AFBB06F009356E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8841240D2AFBDAAE007688D6 /* Storage.swift */,
+				8841240F2AFBDBB8007688D6 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,7 +204,9 @@
 				88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */,
 				88DC44BF2AFBBF0A009356E9 /* Map.swift in Sources */,
 				88DC44B62AFBB201009356E9 /* Player.swift in Sources */,
+				8841240E2AFBDAAE007688D6 /* Storage.swift in Sources */,
 				88DC44B82AFBB541009356E9 /* Item.swift in Sources */,
+				884124102AFBDBB8007688D6 /* Player.swift in Sources */,
 				88DC449D2AFBAAB5009356E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
