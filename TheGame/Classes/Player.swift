@@ -20,8 +20,8 @@ final class Player: Object, PlayerProtocol, PlayerStatsProtocol, PlayerInventory
     @Persisted var accuracy: Int
     @Persisted var stamina: Int
 
-//    @Persisted var items: List<Item>
-//    @Persisted var location: Map
+    @Persisted var items: List<Item>
+    @Persisted var location: Map
     
     required override init() {
         super.init()

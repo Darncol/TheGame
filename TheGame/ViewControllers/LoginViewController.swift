@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import RealmSwift
 
 
 class LoginViewController: UIViewController {
     
+    let realmService = RealmService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
+      
     }
 
 }
