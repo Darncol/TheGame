@@ -9,21 +9,22 @@ import Foundation
 
 protocol PlayerProtocol {
     var name: String { get }
-    var exp: Int { get set }
-    var money: Int { get set }
+    var exp: Int { get }
+    var money: Int { get }
+    var point: Int { get }
 }
 
 protocol PlayerStatsProtocol {
-    var health: Int { get set }
-    var strenght: Int { get set }
-    var accuracy: Int { get set }
-    var stamina: Int { get set }
+    var health: Int { get }
+    var strenght: Int { get }
+    var accuracy: Int { get }
+    var stamina: Int { get }
 }
 
 protocol PlayerInventoryProtocol {
-    var items: [ItemProtocol] { get set }
+    var items: [ItemProtocol] { get }
 }
 
-protocol PlayerlocationProtocol {
-    var location: MapProtocol { get set }
+protocol MapProtocol {
+    var coordinates: (y: Int, x: Int) { get }
 }

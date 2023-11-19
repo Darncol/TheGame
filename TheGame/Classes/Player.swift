@@ -2,37 +2,61 @@
 //  Player.swift
 //  TheGame
 //
-//  Created by Alexey Solop on 08.11.2023.
+//  Created by Alexey Solop on 15.11.2023.
 //
 
 import Foundation
-import RealmSwift
 
-final class Player: Object, PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, PlayerlocationProtocol {
+class Player: PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, MapProtocol {
     
-    @Persisted(primaryKey: true) var id: String
-    @Persisted var name: String
-    @Persisted var exp: Int
-    @Persisted var money: Int
-
-    @Persisted var health: Int
-    @Persisted var strenght: Int
-    @Persisted var accuracy: Int
-    @Persisted var stamina: Int
-
-    @Persisted var items: List<Item>
-    @Persisted var location: Map
+   private(set) var name: String
+   private(set) var exp: Int
+   private(set) var money: Int
+   private(set) var point: Int
     
-    required override init() {
-        super.init()
-    }
+   private(set) var health: Int
+   private(set) var strenght: Int
+   private(set) var accuracy: Int
+   private(set) var stamina: Int
     
-    convenience init(name: String) {
-        self.init()
+   private(set) var items: [ItemProtocol]
+    
+   private(set) var coordinates: (y: Int, x: Int)
+    
+    init(name: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, items: [ItemProtocol], coordinates: (Int, Int)) {
         self.name = name
-        self.id = sha256Hash(from: name)
+        self.exp = exp
+        self.money = money
+        self.point = point
+        self.health = health
+        self.strenght = strenght
+        self.accuracy = accuracy
+        self.stamina = stamina
+        self.items = items
+        self.coordinates = coordinates
     }
+    
+    convenience init(name: String, coordinates: (Int, Int)) {
+        self.init(
+            name: name,
+            exp: 0,
+            money: 0,
+            point: 2,
+            health: 10,
+            strenght: 1,
+            accuracy: 1,
+            stamina: 1,
+            items: [],
+            coordinates: coordinates
+        )
+        
+    }
+    
+    func moveToNew(destination coordinate: Int) {
+        coordinates.y = Int((Double(coordinate) / 3.0).rounded(.up)) - 1
+        coordinates.x = (coordinate % 3) - 1
+    }
+    
 }
-
 
 
