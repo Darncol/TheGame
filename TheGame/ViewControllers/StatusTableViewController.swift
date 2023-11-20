@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StatusTableViewController: UITableViewController {
+final class StatusTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

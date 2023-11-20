@@ -9,9 +9,7 @@ import UIKit
 import RealmSwift
 
 
-class LoginViewController: UIViewController {
-    
-    let realmService = RealmService()
+final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

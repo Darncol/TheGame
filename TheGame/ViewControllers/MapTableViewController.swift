@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MapTableViewController: UITableViewController {
+final class MapTableViewController: UITableViewController {
     
     @IBOutlet var mapButtons: [UIButton]!
     
@@ -18,7 +18,7 @@ class MapTableViewController: UITableViewController {
         [10,11,12]
     ]
     
-    let player = Player(name: "Test", coordinates: (1,2))
+    private let player = Player(name: "Test", coordinates: (1,2))
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -74,8 +74,9 @@
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="31"/>
                                                 <color key="tintColor" systemColor="tableBackgroundColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <size key="titleShadowOffset" width="2" height="-1"/>
+                                                <size key="titleShadowOffset" width="1" height="1"/>
                                                 <state key="normal" title="Enter">
+                                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -126,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599.20000000000005" y="-379.80295566502463"/>
+            <point key="canvasLocation" x="4229" y="-551"/>
         </scene>
         <!--Status-->
         <scene sceneID="uDk-5b-lMc">
@@ -296,7 +297,7 @@
             </objects>
             <point key="canvasLocation" x="5473" y="-196"/>
         </scene>
-        <!--Map Table View Controller-->
+        <!--Map-->
         <scene sceneID="oXf-n6-Dr4">
             <objects>
                 <tableViewController id="FQp-7I-GRb" customClass="MapTableViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
@@ -448,7 +449,7 @@
                             <outlet property="delegate" destination="FQp-7I-GRb" id="ePZ-Y8-Wgt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7yA-hu-jEM"/>
+                    <navigationItem key="navigationItem" title="Map" id="7yA-hu-jEM"/>
                     <connections>
                         <outletCollection property="mapButtons" destination="gSB-Cd-QfM" collectionClass="NSMutableArray" id="Ntg-qv-70c"/>
                         <outletCollection property="mapButtons" destination="DCQ-LX-uQy" collectionClass="NSMutableArray" id="95x-FE-437"/>
@@ -468,11 +469,11 @@
             </objects>
             <point key="canvasLocation" x="6459.0697674418607" y="-165.45064377682405"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="wXj-uA-Fd9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XYd-e2-0xO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Fhf-nY-ja5"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="Fhf-nY-ja5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SIK-Wj-Or1">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
@@ -487,11 +488,11 @@
             </objects>
             <point key="canvasLocation" x="6236" y="-1035.832083958021"/>
         </scene>
-        <!--Item-->
+        <!--Status-->
         <scene sceneID="xjH-yS-p1j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MeP-EY-cHo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="G2h-ie-CoO"/>
+                    <tabBarItem key="tabBarItem" title="Status" image="figure.archery" catalog="system" id="G2h-ie-CoO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="doA-bR-4BM">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
@@ -528,11 +529,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackImage" width="1024" height="1024"/>
+        <image name="BackImage" width="1024" height="1792"/>
         <image name="Map" width="1024" height="1792"/>
         <image name="face.smiling.fill" catalog="system" width="128" height="123"/>
+        <image name="figure.archery" catalog="system" width="118" height="128"/>
+        <image name="map" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

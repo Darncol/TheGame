@@ -11,17 +11,20 @@ import RealmSwift
 final class SavePlayerData: Object {
 
     @Persisted(primaryKey: true) var id: String
-    @Persisted private(set) var name: String
-    @Persisted private(set) var exp: Int
-    @Persisted private(set) var money: Int
-    @Persisted private(set) var point: Int
+    @Persisted var name: String
+    @Persisted var exp: Int
+    @Persisted var money: Int
+    @Persisted var point: Int
 
-    @Persisted private(set) var health: Int
-    @Persisted private(set) var strenght: Int
-    @Persisted private(set) var accuracy: Int
-    @Persisted private(set) var stamina: Int
+    @Persisted var health: Int
+    @Persisted var strenght: Int
+    @Persisted var accuracy: Int
+    @Persisted var stamina: Int
 
-    @Persisted private(set) var items: List<SaveItem>
+    @Persisted var items: List<SaveItem>
+    
+    @Persisted var coordinatesY: Int
+    @Persisted var coordinatesX: Int
     
     required override init() {
         super.init()
@@ -35,8 +38,8 @@ final class SavePlayerData: Object {
 }
 
 final class SaveItem: Object {
-   @Persisted private(set) var name: String
-   @Persisted private(set) var durability: Int
+   @Persisted var name: String
+   @Persisted var durability: Int
     
    required override init() {
        super.init()
