@@ -53,10 +53,9 @@ class Player: PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, MapP
     }
     
     func moveToNew(destination coordinate: Int) {
-        coordinates.y = Int((Double(coordinate) / 3.0).rounded(.up)) - 1
-        coordinates.x = (coordinate % 3) - 1 != -1 ? (coordinate % 3) - 1 : 2
+        coordinates.y = (coordinate - 1) / 3
+        coordinates.x = (coordinate - 1) % 3
     }
-    
 }
 
 

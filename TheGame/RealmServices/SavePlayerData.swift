@@ -8,8 +8,6 @@
 import Foundation
 import RealmSwift
 
-// MARK: Додумать как связать протоколы и realm
-
 final class SavePlayerData: Object {
 
     @Persisted(primaryKey: true) var id: String

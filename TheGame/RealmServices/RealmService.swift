@@ -9,7 +9,25 @@ import Foundation
 import RealmSwift
 
 final class RealmService {
-    let localRealm = try! Realm()
+    private var realm: Realm?
+
+       init() {
+           do {
+               self.realm = try Realm()
+           } catch {
+               print("Ошибка инициализации Realm: \(error)")
+           }
+       }
+
+       func addObject(_ object: Object) {
+           do {
+               try realm?.write {
+                   realm?.add(object)
+               }
+           } catch {
+               print("Ошибка при добавлении объекта: \(error)")
+           }
+       }
 }
 
 

@@ -450,18 +450,18 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="7yA-hu-jEM"/>
                     <connections>
-                        <outletCollection property="positionOutlets" destination="gSB-Cd-QfM" collectionClass="NSMutableArray" id="Ntg-qv-70c"/>
-                        <outletCollection property="positionOutlets" destination="DCQ-LX-uQy" collectionClass="NSMutableArray" id="95x-FE-437"/>
-                        <outletCollection property="positionOutlets" destination="CAD-Ar-hqa" collectionClass="NSMutableArray" id="GQB-zw-dY8"/>
-                        <outletCollection property="positionOutlets" destination="B4r-n3-hJl" collectionClass="NSMutableArray" id="j3T-dT-Hd5"/>
-                        <outletCollection property="positionOutlets" destination="zO4-eU-l2P" collectionClass="NSMutableArray" id="Mcw-eZ-Av9"/>
-                        <outletCollection property="positionOutlets" destination="4FA-bP-2oh" collectionClass="NSMutableArray" id="zfd-FB-xFr"/>
-                        <outletCollection property="positionOutlets" destination="eRx-le-Boq" collectionClass="NSMutableArray" id="wDP-jT-wwQ"/>
-                        <outletCollection property="positionOutlets" destination="67M-Y4-rV7" collectionClass="NSMutableArray" id="WlR-bW-3Cb"/>
-                        <outletCollection property="positionOutlets" destination="8VE-cc-q7C" collectionClass="NSMutableArray" id="QFc-Bf-tKx"/>
-                        <outletCollection property="positionOutlets" destination="Gle-EM-t8q" collectionClass="NSMutableArray" id="S4S-k7-6Jv"/>
-                        <outletCollection property="positionOutlets" destination="0tc-XJ-yyd" collectionClass="NSMutableArray" id="2Xn-Bt-fWT"/>
-                        <outletCollection property="positionOutlets" destination="y7W-ip-Zuv" collectionClass="NSMutableArray" id="IoS-SY-xkg"/>
+                        <outletCollection property="mapButtons" destination="gSB-Cd-QfM" collectionClass="NSMutableArray" id="Ntg-qv-70c"/>
+                        <outletCollection property="mapButtons" destination="DCQ-LX-uQy" collectionClass="NSMutableArray" id="95x-FE-437"/>
+                        <outletCollection property="mapButtons" destination="CAD-Ar-hqa" collectionClass="NSMutableArray" id="GQB-zw-dY8"/>
+                        <outletCollection property="mapButtons" destination="B4r-n3-hJl" collectionClass="NSMutableArray" id="j3T-dT-Hd5"/>
+                        <outletCollection property="mapButtons" destination="zO4-eU-l2P" collectionClass="NSMutableArray" id="Mcw-eZ-Av9"/>
+                        <outletCollection property="mapButtons" destination="4FA-bP-2oh" collectionClass="NSMutableArray" id="zfd-FB-xFr"/>
+                        <outletCollection property="mapButtons" destination="eRx-le-Boq" collectionClass="NSMutableArray" id="wDP-jT-wwQ"/>
+                        <outletCollection property="mapButtons" destination="67M-Y4-rV7" collectionClass="NSMutableArray" id="WlR-bW-3Cb"/>
+                        <outletCollection property="mapButtons" destination="8VE-cc-q7C" collectionClass="NSMutableArray" id="QFc-Bf-tKx"/>
+                        <outletCollection property="mapButtons" destination="Gle-EM-t8q" collectionClass="NSMutableArray" id="S4S-k7-6Jv"/>
+                        <outletCollection property="mapButtons" destination="0tc-XJ-yyd" collectionClass="NSMutableArray" id="2Xn-Bt-fWT"/>
+                        <outletCollection property="mapButtons" destination="y7W-ip-Zuv" collectionClass="NSMutableArray" id="IoS-SY-xkg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whs-A8-vMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -513,6 +513,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="JxI-Sk-KwF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FAm-Ai-7JN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
