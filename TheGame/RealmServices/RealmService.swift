@@ -35,7 +35,7 @@ final class RealmService {
         
         do {
             try realm?.write {
-                realm?.add(savedPlayerData)
+                realm?.add(savedPlayerData, update: .modified)
             }
         } catch {
             print("Ошибка при добавлении объекта: \(error)")

@@ -20,7 +20,8 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        loginTF.delegate = self
+        passwordTF.delegate = self
     }
     
  
@@ -31,7 +32,7 @@ final class LoginViewController: UIViewController {
             let securedPassword = sha256Hash(from: password)
             
             if let player = realm.loadPlayer(name: login), player.password == securedPassword {
-                performSegue(withIdentifier: "acсess", sender: nil)
+                performSegue(withIdentifier: "access", sender: nil)
             } else {
                 showAlert(for: "☠️", and: "Неправильный ник или пароль!")
             }
@@ -54,7 +55,7 @@ final class LoginViewController: UIViewController {
                 let player = Player(name: login, password: securedPassword, coordinates: (0, 0))
             print(player.password)
                 realm.savePlayer(player)
-                performSegue(withIdentifier: "acсess", sender: nil)
+                performSegue(withIdentifier: "access", sender: nil)
             }
         }
     }
@@ -69,7 +70,7 @@ extension LoginViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "acсess",
+        guard segue.identifier == "access",
                   let destinationVC = segue.destination as? UITabBarController,
                   let navController = destinationVC.viewControllers?.last as? UINavigationController,
                   let mapVC = navController.topViewController as? MapTableViewController,
@@ -81,3 +82,9 @@ extension LoginViewController {
     }
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}

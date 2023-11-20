@@ -40,7 +40,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="fm9-SS-RdZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="nickname"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -133,7 +133,7 @@
                     <connections>
                         <outlet property="loginTF" destination="Y27-ZH-ti4" id="yYK-ga-wmx"/>
                         <outlet property="passwordTF" destination="3r3-bq-06M" id="m3n-12-X3D"/>
-                        <segue destination="aGL-af-RZ4" kind="show" identifier="acess" id="hGP-oF-n3V"/>
+                        <segue destination="aGL-af-RZ4" kind="show" identifier="access" id="dpQ-Aq-Yby"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -68,6 +68,6 @@ extension MapTableViewController {
         guard let player = player else { return }
         
         player.moveToNew(destination: position)
-        
+        realm.savePlayer(player)
     }
 }
