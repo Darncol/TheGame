@@ -18,7 +18,6 @@
 		88DC44A22AFBAAB5009356E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DC44A02AFBAAB5009356E9 /* Main.storyboard */; };
 		88DC44A42AFBAAB6009356E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DC44A32AFBAAB6009356E9 /* Assets.xcassets */; };
 		88DC44A72AFBAAB6009356E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DC44A52AFBAAB6009356E9 /* LaunchScreen.storyboard */; };
-		88DC44B42AFBB14C009356E9 /* IdenitficationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B32AFBB14C009356E9 /* IdenitficationProtocol.swift */; };
 		88DC44B62AFBB201009356E9 /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */; };
 		88DC44B82AFBB541009356E9 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC44B72AFBB541009356E9 /* ItemProtocol.swift */; };
 		88DC44BB2AFBB6CB009356E9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BA2AFBB6CB009356E9 /* Realm */; };
@@ -40,7 +39,6 @@
 		88DC44A32AFBAAB6009356E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DC44A62AFBAAB6009356E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88DC44A82AFBAAB6009356E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88DC44B32AFBB14C009356E9 /* IdenitficationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdenitficationProtocol.swift; sourceTree = "<group>"; };
 		88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
 		88DC44B72AFBB541009356E9 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
 		88EDCC452AFD231C00742E74 /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 		88DC44B22AFBB0D2009356E9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				88DC44B32AFBB14C009356E9 /* IdenitficationProtocol.swift */,
 				88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */,
 				88DC44B72AFBB541009356E9 /* ItemProtocol.swift */,
 			);
@@ -233,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DC449F2AFBAAB5009356E9 /* LoginViewController.swift in Sources */,
-				88DC44B42AFBB14C009356E9 /* IdenitficationProtocol.swift in Sources */,
 				88EDCC462AFD231C00742E74 /* StatusTableViewController.swift in Sources */,
 				88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */,
 				888D48A22B04E77F004385DA /* Player.swift in Sources */,

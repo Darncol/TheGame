@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 final class RealmService {
-     private var realm: Realm?
+    private var realm: Realm?
     
     init() {
         do {
@@ -19,9 +19,10 @@ final class RealmService {
         }
     }
     
-     func savePlayer(_ player: Player) {
-         let savedPlayerData = SavePlayerData(
+    func savePlayer(_ player: Player) {
+        let savedPlayerData = SavePlayerData(
             name: player.name,
+            password: player.password,
             exp: player.exp,
             money: player.money,
             point: player.point,
@@ -30,8 +31,8 @@ final class RealmService {
             accuracy: player.accuracy,
             stamina: player.stamina,
             coordinates: player.coordinates
-         )
-         
+        )
+        
         do {
             try realm?.write {
                 realm?.add(savedPlayerData)
@@ -47,6 +48,7 @@ final class RealmService {
         if let loadedPlayerData = realm?.object(ofType: SavePlayerData.self, forPrimaryKey: playerID) {
             let player = Player(
                 name: loadedPlayerData.name,
+                password: loadedPlayerData.password,
                 exp: loadedPlayerData.exp,
                 money: loadedPlayerData.money,
                 point: loadedPlayerData.point,
@@ -62,7 +64,13 @@ final class RealmService {
             return nil
         }
     }
-
+    
+    func doesPlayerExist(name: String) -> Bool {
+        let id = sha256Hash(from: name)
+        return realm?.object(ofType: SavePlayerData.self, forPrimaryKey: id) != nil ? true : false
+    }
+    
 }
+
 
 

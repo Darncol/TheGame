@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Настройка конфигурации Realm
+                let config = Realm.Configuration(
+                    // Установите новую версию схемы. Это должно быть число больше, чем предыдущая версия
+                    // (если вы никогда не устанавливали версию схемы, то первоначальная версия равна 0).
+                    schemaVersion: 1,
+
+                    // Установите блок миграции. Это блок будет вызываться автоматически при открытии
+                    // Realm с более старой версией схемы, чем заданная выше.
+                    migrationBlock: { migration, oldSchemaVersion in
+                        // Мы пока не используем миграцию, но вы можете реализовать ее здесь,
+                        // если нужно выполнить миграцию при изменении схемы.
+                        if (oldSchemaVersion < 1) {
+                            // Ничего не делаем, так как мы добавляем новое свойство, которое автоматически обрабатывается
+                        }
+                    }
+                )
+
+                // Устанавливаем новую конфигурацию как конфигурацию по умолчанию
+                Realm.Configuration.defaultConfiguration = config
+
+                // Теперь мы можем открывать Realm без дополнительных настроек
+                let _ = try! Realm()
         return true
     }
 

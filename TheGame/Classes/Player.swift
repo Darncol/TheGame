@@ -9,20 +9,22 @@ import Foundation
 
 class Player: PlayerProtocol, PlayerStatsProtocol, MapProtocol {
     
-   private(set) var name: String
-   private(set) var exp: Int
-   private(set) var money: Int
-   private(set) var point: Int
+    private(set) var name: String
+    private(set) var password: String
+    private(set) var exp: Int
+    private(set) var money: Int
+    private(set) var point: Int
     
-   private(set) var health: Int
-   private(set) var strenght: Int
-   private(set) var accuracy: Int
-   private(set) var stamina: Int
+    private(set) var health: Int
+    private(set) var strenght: Int
+    private(set) var accuracy: Int
+    private(set) var stamina: Int
     
-   private(set) var coordinates: (y: Int, x: Int)
+    private(set) var coordinates: (y: Int, x: Int)
     
-    init(name: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, coordinates: (Int, Int)) {
+    init(name: String, password: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, coordinates: (Int, Int)) {
         self.name = name
+        self.password = password
         self.exp = exp
         self.money = money
         self.point = point
@@ -33,9 +35,10 @@ class Player: PlayerProtocol, PlayerStatsProtocol, MapProtocol {
         self.coordinates = coordinates
     }
     
-    convenience init(name: String, coordinates: (Int, Int)) {
+    convenience init(name: String, password: String, coordinates: (Int, Int)) {
         self.init(
-            name: name,
+            name: name, 
+            password: password,
             exp: 0,
             money: 0,
             point: 2,

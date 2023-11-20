@@ -11,6 +11,7 @@ import RealmSwift
 final class SavePlayerData: Object {
 
     @Persisted(primaryKey: true) var id: String
+    @Persisted var password: String
     @Persisted var name: String
     @Persisted var exp: Int
     @Persisted var money: Int
@@ -28,9 +29,10 @@ final class SavePlayerData: Object {
         super.init()
     }
     
-    convenience init(name: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, coordinates: (Int, Int)) {
+    convenience init(name: String, password: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, coordinates: (Int, Int)) {
         self.init()
         self.name = name
+        self.password = password
         self.exp = exp
         self.money = money
         self.point = point

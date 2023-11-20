@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGL-af-RZ4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -84,6 +84,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="enterButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bu-ee-7b9"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg3-dW-1lr">
                                                 <rect key="frame" x="0.0" y="64" width="200" height="24"/>
@@ -107,6 +110,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createNewPlayerButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="rg5-6F-Owy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -124,17 +130,22 @@
                             <constraint firstItem="ksW-L6-Lpt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z13-Fm-9o0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginTF" destination="Y27-ZH-ti4" id="yYK-ga-wmx"/>
+                        <outlet property="passwordTF" destination="3r3-bq-06M" id="m3n-12-X3D"/>
+                        <segue destination="aGL-af-RZ4" kind="show" identifier="acess" id="hGP-oF-n3V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4229" y="-551"/>
+            <point key="canvasLocation" x="4916" y="-1927"/>
         </scene>
         <!--Status-->
         <scene sceneID="uDk-5b-lMc">
             <objects>
                 <tableViewController id="4LJ-Vx-Zow" customClass="StatusTableViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1pp-C5-BdE">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -302,7 +313,7 @@
             <objects>
                 <tableViewController id="FQp-7I-GRb" customClass="MapTableViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4tT-dj-q32">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -476,7 +487,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="Fhf-nY-ja5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SIK-Wj-Or1">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -495,7 +506,7 @@
                     <tabBarItem key="tabBarItem" title="Status" image="figure.archery" catalog="system" id="G2h-ie-CoO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="doA-bR-4BM">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -510,7 +521,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jXi-oC-ZHm">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aGL-af-RZ4" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="aGL-af-RZ4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="JxI-Sk-KwF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FAm-Ai-7JN">
