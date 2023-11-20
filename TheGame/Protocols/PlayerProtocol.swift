@@ -21,10 +21,6 @@ protocol PlayerStatsProtocol {
     var stamina: Int { get }
 }
 
-protocol PlayerInventoryProtocol {
-    var items: [ItemProtocol] { get }
-}
-
 protocol MapProtocol {
     var coordinates: (y: Int, x: Int) { get }
 }

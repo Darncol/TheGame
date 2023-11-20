@@ -20,8 +20,6 @@ final class SavePlayerData: Object {
     @Persisted var strenght: Int
     @Persisted var accuracy: Int
     @Persisted var stamina: Int
-
-    @Persisted var items: List<SaveItem>
     
     @Persisted var coordinatesY: Int
     @Persisted var coordinatesX: Int
@@ -30,26 +28,20 @@ final class SavePlayerData: Object {
         super.init()
     }
     
-    convenience init(name: String) {
+    convenience init(name: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, coordinates: (Int, Int)) {
         self.init()
         self.name = name
+        self.exp = exp
+        self.money = money
+        self.point = point
+        self.health = health
+        self.strenght = strenght
+        self.accuracy = accuracy
+        self.stamina = stamina
+        self.coordinatesY = coordinates.0
+        self.coordinatesX = coordinates.1
         self.id = sha256Hash(from: name)
     }
 }
 
-final class SaveItem: Object {
-   @Persisted var name: String
-   @Persisted var durability: Int
-    
-   required override init() {
-       super.init()
-    }
-    
-    convenience init(name: String, durability: Int) {
-        self.init()
-        self.name = name
-        self.durability = durability
-    }
-    
-}
 

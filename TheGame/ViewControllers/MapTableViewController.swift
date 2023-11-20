@@ -11,6 +11,8 @@ final class MapTableViewController: UITableViewController {
     
     @IBOutlet var mapButtons: [UIButton]!
     
+    let realm = RealmService()
+    
     private let map = [
         [1,2,3],
         [4,5,6],
@@ -18,13 +20,16 @@ final class MapTableViewController: UITableViewController {
         [10,11,12]
     ]
     
-    private let player = Player(name: "Test", coordinates: (1,2))
-
+    private var player: Player?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        player = realm.loadPlayer(name: "Test")
+        if player == nil { print("NIL")}
         configureButtonBorders()
         updatePlayerLocation()
+        
     }
     
     
@@ -43,7 +48,10 @@ extension MapTableViewController {
     }
     
     private func updatePlayerLocation() {
+        guard let player = player else { return }
+        
         removeImagesFromButtons()
+        
         let index = map[player.coordinates.y][player.coordinates.x]
         mapButtons[index - 1].setImage(UIImage(systemName: "arrowshape.down.fill"), for: .normal)
     }
@@ -55,6 +63,8 @@ extension MapTableViewController {
     }
     
     private func movePlayerToPosition(_ position: Int) {
+        guard let player = player else { return }
+        
         player.moveToNew(destination: position)
         
     }

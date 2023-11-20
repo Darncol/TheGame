@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Player: PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, MapProtocol {
+class Player: PlayerProtocol, PlayerStatsProtocol, MapProtocol {
     
    private(set) var name: String
    private(set) var exp: Int
@@ -19,11 +19,9 @@ class Player: PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, MapP
    private(set) var accuracy: Int
    private(set) var stamina: Int
     
-   private(set) var items: [ItemProtocol]
-    
    private(set) var coordinates: (y: Int, x: Int)
     
-    init(name: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, items: [ItemProtocol], coordinates: (Int, Int)) {
+    init(name: String, exp: Int, money: Int, point: Int, health: Int, strenght: Int, accuracy: Int, stamina: Int, coordinates: (Int, Int)) {
         self.name = name
         self.exp = exp
         self.money = money
@@ -32,7 +30,6 @@ class Player: PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, MapP
         self.strenght = strenght
         self.accuracy = accuracy
         self.stamina = stamina
-        self.items = items
         self.coordinates = coordinates
     }
     
@@ -46,7 +43,6 @@ class Player: PlayerProtocol, PlayerStatsProtocol, PlayerInventoryProtocol, MapP
             strenght: 1,
             accuracy: 1,
             stamina: 1,
-            items: [],
             coordinates: coordinates
         )
         
