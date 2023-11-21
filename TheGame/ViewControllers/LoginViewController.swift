@@ -12,7 +12,6 @@ import RealmSwift
 final class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
     
     private let realmService = RealmService()
