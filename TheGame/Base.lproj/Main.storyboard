@@ -85,7 +85,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="enterButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bu-ee-7b9"/>
+                                                    <action selector="handleLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bu-ee-7b9"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg3-dW-1lr">
@@ -111,7 +111,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="createNewPlayerButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="rg5-6F-Owy"/>
+                                                    <action selector="handleNewPlayerCreation" destination="BYZ-38-t0r" eventType="touchUpInside" id="rg5-6F-Owy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -131,8 +131,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginTF" destination="Y27-ZH-ti4" id="yYK-ga-wmx"/>
-                        <outlet property="passwordTF" destination="3r3-bq-06M" id="m3n-12-X3D"/>
+                        <outlet property="loginTextField" destination="Y27-ZH-ti4" id="yYK-ga-wmx"/>
+                        <outlet property="passwordTextField" destination="3r3-bq-06M" id="m3n-12-X3D"/>
                         <segue destination="aGL-af-RZ4" kind="show" identifier="access" id="dpQ-Aq-Yby"/>
                     </connections>
                 </viewController>
@@ -200,7 +200,7 @@
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xf8-Wq-EYX">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling.inverse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xf8-Wq-EYX">
                                                             <rect key="frame" x="232" y="1" width="166" height="114.66666666666667"/>
                                                         </imageView>
                                                     </subviews>
@@ -542,7 +542,7 @@
     <resources>
         <image name="BackImage" width="1024" height="1792"/>
         <image name="Map" width="1024" height="1792"/>
-        <image name="face.smiling.fill" catalog="system" width="128" height="123"/>
+        <image name="face.smiling.inverse" catalog="system" width="128" height="123"/>
         <image name="figure.archery" catalog="system" width="118" height="128"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">

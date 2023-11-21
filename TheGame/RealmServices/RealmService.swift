@@ -42,10 +42,10 @@ final class RealmService {
         }
     }
     
-    func loadPlayer(name: String) -> Player? {
-        let playerID = sha256Hash(from: name)
+    func loadPlayer(id: String) -> Player? {
+//        let playerID = sha256Hash(from: name)
         
-        if let loadedPlayerData = realm?.object(ofType: SavePlayerData.self, forPrimaryKey: playerID) {
+        if let loadedPlayerData = realm?.object(ofType: SavePlayerData.self, forPrimaryKey: id) {
             let player = Player(
                 name: loadedPlayerData.name,
                 password: loadedPlayerData.password,
@@ -60,14 +60,14 @@ final class RealmService {
             )
             return player
         } else {
-            print("Игрок с именем \(name) не найден.")
+            print("Игрок не найден.")
             return nil
         }
     }
     
     func doesPlayerExist(name: String) -> Bool {
         let id = sha256Hash(from: name)
-        return realm?.object(ofType: SavePlayerData.self, forPrimaryKey: id) != nil ? true : false
+        return realm?.object(ofType: SavePlayerData.self, forPrimaryKey: id) != nil
     }
     
 }

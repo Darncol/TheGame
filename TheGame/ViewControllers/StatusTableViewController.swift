@@ -9,11 +9,14 @@ import UIKit
 
 final class StatusTableViewController: UITableViewController {
     
-    var playerName: String?
+    private let realm = RealmService()
+    
+    private var player: Player?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        if let id = AuthenticationStore.shared.id {
+            player = realm.loadPlayer(id: id)
+        }
     }
 }

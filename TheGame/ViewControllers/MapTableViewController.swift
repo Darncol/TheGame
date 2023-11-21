@@ -13,8 +13,6 @@ final class MapTableViewController: UITableViewController {
     
     let realm = RealmService()
     
-    var playerName: String?
-    
     private let map = [
         [1,2,3],
         [4,5,6],
@@ -26,8 +24,8 @@ final class MapTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let playerName = playerName {
-            player = realm.loadPlayer(name: playerName)            
+        if let id = AuthenticationStore.shared.id {
+            player = realm.loadPlayer(id: id)
         }
         configureButtonBorders()
         updatePlayerLocation()

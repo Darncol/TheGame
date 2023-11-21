@@ -7,6 +7,7 @@
 
 import Foundation
 import CryptoKit
+import UIKit
 
 func sha256Hash(from input: String) -> String {
     let inputData = Data(input.utf8)
