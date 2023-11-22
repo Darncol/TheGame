@@ -12,6 +12,7 @@
 		884124102AFBDBB8007688D6 /* SavePlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841240F2AFBDBB8007688D6 /* SavePlayerData.swift */; };
 		8885849F2AFBE38900CCF903 /* Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885849E2AFBE38900CCF903 /* Func.swift */; };
 		888D48A22B04E77F004385DA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D48A12B04E77F004385DA /* Player.swift */; };
+		88904F672B0E010A00A4C532 /* MapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88904F662B0E010A00A4C532 /* MapProtocol.swift */; };
 		88D031062B0C974800DA730A /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D031052B0C974800DA730A /* SegueIdentifiers.swift */; };
 		88D031082B0CA09200DA730A /* Authentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D031072B0CA09200DA730A /* Authentification.swift */; };
 		88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC449A2AFBAAB5009356E9 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 		88DC44BB2AFBB6CB009356E9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BA2AFBB6CB009356E9 /* Realm */; };
 		88DC44BD2AFBB6CB009356E9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88DC44BC2AFBB6CB009356E9 /* RealmSwift */; };
 		88EDCC462AFD231C00742E74 /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EDCC452AFD231C00742E74 /* StatusTableViewController.swift */; };
+		88F686BB2B0D4378000C37C6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F686BA2B0D4378000C37C6 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		8841240F2AFBDBB8007688D6 /* SavePlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePlayerData.swift; sourceTree = "<group>"; };
 		8885849E2AFBE38900CCF903 /* Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Func.swift; sourceTree = "<group>"; };
 		888D48A12B04E77F004385DA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		88904F662B0E010A00A4C532 /* MapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocol.swift; sourceTree = "<group>"; };
 		88D031052B0C974800DA730A /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 		88D031072B0CA09200DA730A /* Authentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentification.swift; sourceTree = "<group>"; };
 		88DC44972AFBAAB5009356E9 /* TheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,7 @@
 		88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
 		88DC44B72AFBB541009356E9 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
 		88EDCC452AFD231C00742E74 /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		88F686BA2B0D4378000C37C6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			children = (
 				88DC44B52AFBB201009356E9 /* PlayerProtocol.swift */,
 				88DC44B72AFBB541009356E9 /* ItemProtocol.swift */,
+				88904F662B0E010A00A4C532 /* MapProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			children = (
 				888D48A12B04E77F004385DA /* Player.swift */,
 				88D031072B0CA09200DA730A /* Authentification.swift */,
+				88F686BA2B0D4378000C37C6 /* Map.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -248,10 +254,12 @@
 				88EDCC462AFD231C00742E74 /* StatusTableViewController.swift in Sources */,
 				88DC449B2AFBAAB5009356E9 /* AppDelegate.swift in Sources */,
 				888D48A22B04E77F004385DA /* Player.swift in Sources */,
+				88F686BB2B0D4378000C37C6 /* Map.swift in Sources */,
 				8826C01B2B06734800B86CF5 /* MapTableViewController.swift in Sources */,
 				88D031082B0CA09200DA730A /* Authentification.swift in Sources */,
 				88DC44B62AFBB201009356E9 /* PlayerProtocol.swift in Sources */,
 				8841240E2AFBDAAE007688D6 /* RealmService.swift in Sources */,
+				88904F672B0E010A00A4C532 /* MapProtocol.swift in Sources */,
 				88DC44B82AFBB541009356E9 /* ItemProtocol.swift in Sources */,
 				884124102AFBDBB8007688D6 /* SavePlayerData.swift in Sources */,
 				88DC449D2AFBAAB5009356E9 /* SceneDelegate.swift in Sources */,

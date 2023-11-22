@@ -11,31 +11,27 @@ final class MapTableViewController: UITableViewController {
     
     @IBOutlet var mapButtons: [UIButton]!
     
-    let realm = RealmService()
-    
-    private let map = [
-        [1,2,3],
-        [4,5,6],
-        [7,8,9],
-        [10,11,12]
-    ]
+    let realmService = RealmService()
     
     private var player: Player?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if let id = AuthenticationStore.shared.id {
-            player = realm.loadPlayer(id: id)
+            player = realmService.loadPlayer(id: id)
         }
+        
         configureButtonBorders()
         updatePlayerLocation()
-        
+        updateTitleLocation()
     }
     
     
     @IBAction func updatePositionButton(_ sender: UIButton) {
-        movePlayerToPosition(sender.tag)
-            updatePlayerLocation()
+        movePlayer(to: sender.tag)
+        updatePlayerLocation()
+        updateTitleLocation()
     }
 }
 
@@ -52,8 +48,13 @@ extension MapTableViewController {
         
         removeImagesFromButtons()
         
-        let index = map[player.coordinates.y][player.coordinates.x]
+        let index = Map.shared.getIndex(fromY: player.coordinates.y,andX: player.coordinates.x )
         mapButtons[index - 1].setImage(UIImage(systemName: "arrowshape.down.fill"), for: .normal)
+    }
+    
+    private func updateTitleLocation() {
+        guard let player = player else { return }
+        self.title = Map.shared.getLocationName(byCoordinates: player.coordinates)
     }
     
     private func removeImagesFromButtons() {
@@ -62,10 +63,10 @@ extension MapTableViewController {
         }
     }
     
-    private func movePlayerToPosition(_ position: Int) {
+    private func movePlayer(to position: Int) {
         guard let player = player else { return }
         
         player.moveToNew(destination: position)
-        realm.savePlayer(player)
+        realmService.savePlayer(player)
     }
 }

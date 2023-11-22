@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Player: PlayerProtocol, PlayerStatsProtocol, MapProtocol {
+final class Player: PlayerProtocol, PlayerStatsProtocol, MapProtocol {
     
     private(set) var name: String
     private(set) var password: String

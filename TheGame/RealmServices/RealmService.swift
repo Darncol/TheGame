@@ -43,8 +43,6 @@ final class RealmService {
     }
     
     func loadPlayer(id: String) -> Player? {
-//        let playerID = sha256Hash(from: name)
-        
         if let loadedPlayerData = realm?.object(ofType: SavePlayerData.self, forPrimaryKey: id) {
             let player = Player(
                 name: loadedPlayerData.name,

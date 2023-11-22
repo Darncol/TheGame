@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class AuthenticationManager {
+final class AuthenticationManager {
     private let realmService: RealmService
 
     init(realmService: RealmService) {
@@ -41,7 +41,7 @@ class AuthenticationManager {
        }
 }
 
-class AuthenticationStore {
+final class AuthenticationStore {
     static let shared = AuthenticationStore()
     private(set) var id: String?
 
