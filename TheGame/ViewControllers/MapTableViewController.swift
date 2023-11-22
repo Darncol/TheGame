@@ -11,27 +11,25 @@ final class MapTableViewController: UITableViewController {
     
     @IBOutlet var mapButtons: [UIButton]!
     
-    let realmService = RealmService()
+    private let realmService = RealmService()
     
     private var player: Player?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureButtonBorders()
         
         if let id = AuthenticationStore.shared.id {
             player = realmService.loadPlayer(id: id)
         }
         
-        configureButtonBorders()
-        updatePlayerLocation()
-        updateTitleLocation()
+        updateUIForCurrentPlayer()
     }
     
     
-    @IBAction func updatePositionButton(_ sender: UIButton) {
-        movePlayer(to: sender.tag)
-        updatePlayerLocation()
-        updateTitleLocation()
+    @IBAction func didTapPositionButton(_ sender: UIButton) {
+        moveAndSavePlayer(to: sender.tag)
+        updateUIForCurrentPlayer()
     }
 }
 
@@ -63,10 +61,15 @@ extension MapTableViewController {
         }
     }
     
-    private func movePlayer(to position: Int) {
+    private func moveAndSavePlayer(to position: Int) {
         guard let player = player else { return }
         
         player.moveToNew(destination: position)
         realmService.savePlayer(player)
     }
+    
+    private func updateUIForCurrentPlayer() {
+            updatePlayerLocation()
+            updateTitleLocation()
+        }
 }

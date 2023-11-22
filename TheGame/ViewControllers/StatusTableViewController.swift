@@ -11,6 +11,16 @@ final class StatusTableViewController: UITableViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var locationImage: UIImageView!
     
+    @IBOutlet weak var playerImage: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var expLabel: UILabel!
+    @IBOutlet weak var pointsLabel: UILabel!
+
+    
+    
+    
     private let realm = RealmService()
     
     private var player: Player?

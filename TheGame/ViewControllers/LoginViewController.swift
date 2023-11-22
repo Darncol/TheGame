@@ -78,7 +78,7 @@ extension LoginViewController: UITextFieldDelegate {
 
 // MARK: Error enums
 extension LoginViewController {
-    enum AuthenticationError: String {
+    private enum AuthenticationError: String {
            case emptyFields = "Заполните все поля!"
            case invalidCredentials = "Неправильный ник или пароль!"
            case playerExists = "Такой игрок уже существует"

@@ -164,38 +164,61 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="zQX-WZ-hZT">
                                                             <rect key="frame" x="0.0" y="0.0" width="166" height="116"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyk-dS-LYd">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyk-dS-LYd">
                                                                     <rect key="frame" x="0.0" y="0.0" width="166" height="22.333333333333332"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yx-oT-4DK">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-pm-Hjo">
                                                                     <rect key="frame" x="0.0" y="31.333333333333336" width="166" height="22.333333333333336"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exp: 0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-hU-hw7">
-                                                                    <rect key="frame" x="0.0" y="62.666666666666671" width="166" height="22"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="0y7-xE-HK3">
-                                                                    <rect key="frame" x="0.0" y="93.666666666666671" width="166" height="22.333333333333329"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z86-Im-U8j">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-4A-qPw">
                                                                             <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="22.333333333333332"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8R-6D-Uys">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yx-oT-4DK">
                                                                             <rect key="frame" x="87.666666666666686" y="0.0" width="78.333333333333314" height="22.333333333333332"/>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="filled" title="Add"/>
-                                                                        </button>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-bq-tui">
+                                                                    <rect key="frame" x="0.0" y="62.666666666666671" width="166" height="22"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl3-Zd-fpm">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="22"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-hU-hw7">
+                                                                            <rect key="frame" x="87.666666666666686" y="0.0" width="78.333333333333314" height="22"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDG-Jh-gOv">
+                                                                    <rect key="frame" x="0.0" y="93.666666666666671" width="166" height="22.333333333333329"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvD-cz-uyl">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="22.333333333333332"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z86-Im-U8j">
+                                                                            <rect key="frame" x="87.666666666666686" y="0.0" width="78.333333333333314" height="22.333333333333332"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
@@ -295,8 +318,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Status" id="TNs-7v-ics"/>
                     <connections>
+                        <outlet property="expLabel" destination="pLy-hU-hw7" id="OpQ-Y8-Y33"/>
+                        <outlet property="levelLabel" destination="0Yx-oT-4DK" id="9OP-GJ-9rZ"/>
                         <outlet property="locationImage" destination="dxB-A5-ASQ" id="5LA-3c-uGm"/>
                         <outlet property="locationLabel" destination="sWd-7n-PQQ" id="Zks-CM-EUU"/>
+                        <outlet property="nameLabel" destination="Xyk-dS-LYd" id="9C1-KN-T8z"/>
+                        <outlet property="playerImage" destination="Xf8-Wq-EYX" id="PLy-50-tTV"/>
+                        <outlet property="pointsLabel" destination="Z86-Im-U8j" id="uzq-Eh-Hfz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjq-d3-LV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -334,21 +362,21 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="156.66666666666666"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="84f-Px-sFx"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="84f-Px-sFx"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCQ-LX-uQy">
                                                                     <rect key="frame" x="130" y="0.0" width="130" height="156.66666666666666"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="esv-Yn-w0O"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="esv-Yn-w0O"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAD-Ar-hqa">
                                                                     <rect key="frame" x="260" y="0.0" width="130" height="156.66666666666666"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="Nhg-1b-BXQ"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="Nhg-1b-BXQ"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -360,7 +388,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="156.33333333333334"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="DZR-Jc-ybB"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="DZR-Jc-ybB"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO4-eU-l2P">
@@ -368,14 +396,14 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="tjv-5s-4p1"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="tjv-5s-4p1"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FA-bP-2oh">
                                                                     <rect key="frame" x="260" y="0.0" width="130" height="156.33333333333334"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="92l-In-U6r"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="92l-In-U6r"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -387,21 +415,21 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="156.66666666666666"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="rNz-G5-zJn"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="rNz-G5-zJn"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67M-Y4-rV7">
                                                                     <rect key="frame" x="130" y="0.0" width="130" height="156.66666666666666"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="fUw-2b-AXD"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="fUw-2b-AXD"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VE-cc-q7C">
                                                                     <rect key="frame" x="260" y="0.0" width="130" height="156.66666666666666"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="D7J-xc-WQe"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="D7J-xc-WQe"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -413,21 +441,21 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="156.33333333333334"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="rHT-uW-E08"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="rHT-uW-E08"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tc-XJ-yyd">
                                                                     <rect key="frame" x="130" y="0.0" width="130" height="156.33333333333334"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="J4X-zB-rOD"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="J4X-zB-rOD"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7W-ip-Zuv">
                                                                     <rect key="frame" x="260" y="0.0" width="130" height="156.33333333333334"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <connections>
-                                                                        <action selector="updatePositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="Bxc-bc-1d2"/>
+                                                                        <action selector="didTapPositionButton:" destination="FQp-7I-GRb" eventType="touchUpInside" id="Bxc-bc-1d2"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
